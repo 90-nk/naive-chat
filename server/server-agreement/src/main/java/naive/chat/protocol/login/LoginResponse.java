@@ -1,6 +1,8 @@
 package naive.chat.protocol.login;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import naive.chat.protocol.Command;
 import naive.chat.protocol.Packet;
@@ -12,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class LoginResponse extends Packet {
 
     private boolean success;                    // 登陆反馈
@@ -21,8 +25,6 @@ public class LoginResponse extends Packet {
     private List<ChatTalkDto> chatTalkList = new ArrayList<>();     // 聊天对话框数据[success is true]
     private List<GroupsDto> groupsList = new ArrayList<>();         // 群组列表
     private List<UserFriendDto> userFriendList = new ArrayList<>(); // 好友列表
-
-    public LoginResponse(){} //无参构造
 
     public LoginResponse(boolean success){
         this.success = success;

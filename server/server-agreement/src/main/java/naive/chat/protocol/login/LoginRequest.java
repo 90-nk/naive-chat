@@ -1,12 +1,16 @@
 package naive.chat.protocol.login;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import naive.chat.protocol.Command;
 import naive.chat.protocol.Packet;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class LoginRequest extends Packet {
 
     private String userId;        // 用户ID
