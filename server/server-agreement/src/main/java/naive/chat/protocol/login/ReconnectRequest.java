@@ -1,4 +1,4 @@
-package naive.chat.protocol.talk;
+package naive.chat.protocol.login;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,19 +7,16 @@ import lombok.Setter;
 import naive.chat.protocol.Command;
 import naive.chat.protocol.Packet;
 
-@Getter
 @Setter
-@NoArgsConstructor
+@Getter
 @AllArgsConstructor
-public class DelTalkRequest extends Packet {
+@NoArgsConstructor
+public class ReconnectRequest extends Packet {
 
-    private String userId;  // 用户ID
-    private String talkId;  // 对话框ID
-
-
+    private String userId;
 
     @Override
     public Byte getCommand() {
-        return Command.DelTalkRequest;
+        return Command.ReconnectRequest;
     }
 }

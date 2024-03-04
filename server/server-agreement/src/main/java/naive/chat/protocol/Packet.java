@@ -6,10 +6,14 @@ import naive.chat.protocol.friend.SearchFriendRequest;
 import naive.chat.protocol.friend.SearchFriendResponse;
 import naive.chat.protocol.login.LoginRequest;
 import naive.chat.protocol.login.LoginResponse;
+import naive.chat.protocol.login.ReconnectRequest;
 import naive.chat.protocol.msg.MsgGroupRequest;
 import naive.chat.protocol.msg.MsgGroupResponse;
 import naive.chat.protocol.msg.MsgRequest;
 import naive.chat.protocol.msg.MsgResponse;
+import naive.chat.protocol.talk.DelTalkRequest;
+import naive.chat.protocol.talk.TalkNoticeRequest;
+import naive.chat.protocol.talk.TalkNoticeResponse;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
